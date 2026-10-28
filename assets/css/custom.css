@@ -1,0 +1,1036 @@
+/* ============================================================
+   REGIDESO - Styles personnalisés
+   Couleurs : Jaune #f5c518, Rouge #e74c3c, Noir #1a1a1a
+   ============================================================ */
+
+/* --- Typographie --- */
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+}
+
+/* --- Sidebar Active & Hover --- */
+.nav-sidebar .nav-link.active {
+    background: linear-gradient(135deg, #f5c518, #e74c3c) !important;
+    color: #1a1a1a !important;
+    border-radius: 8px !important;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(245, 197, 24, 0.35);
+}
+.nav-sidebar .nav-link.active p,
+.nav-sidebar .nav-link.active .nav-icon {
+    color: #1a1a1a !important;
+}
+.nav-sidebar .nav-link:hover:not(.active) {
+    background: rgba(245, 197, 24, 0.1) !important;
+    border-radius: 8px;
+}
+.nav-sidebar .nav-link:hover:not(.active) p {
+    color: #f5c518 !important;
+}
+.nav-sidebar .nav-link {
+    margin: 2px 8px;
+    transition: all 0.3s ease;
+}
+
+/* --- Cards --- */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+    animation: fadeIn 0.3s ease;
+    overflow: hidden;
+}
+.card-header {
+    border-radius: 12px 12px 0 0 !important;
+    font-weight: 600;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* --- Tables --- */
+.table thead th {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: #f5c518;
+    border: none;
+    font-size: 0.82rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    padding: 12px 16px;
+    font-weight: 600;
+}
+.table tbody td {
+    vertical-align: middle;
+    padding: 10px 16px;
+    font-size: 0.88rem;
+    border-bottom: 1px solid #f0f0f0;
+}
+.table-hover tbody tr:hover {
+    background: rgba(245, 197, 24, 0.06);
+}
+
+/* --- Buttons --- */
+.btn-primary {
+    background: linear-gradient(135deg, #f5c518, #e74c3c) !important;
+    border: none !important;
+    color: #1a1a1a !important;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 8px 20px;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(245, 197, 24, 0.3);
+}
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(245, 197, 24, 0.45);
+    color: #1a1a1a !important;
+}
+.btn-info { background: linear-gradient(135deg, #4facfe, #00f2fe) !important; border: none; color: white !important; border-radius: 8px; }
+.btn-warning { background: linear-gradient(135deg, #f5c518, #f39c12) !important; border: none; color: #1a1a1a !important; border-radius: 8px; }
+.btn-danger { background: linear-gradient(135deg, #e74c3c, #c0392b) !important; border: none; color: white !important; border-radius: 8px; }
+.btn-success { background: linear-gradient(135deg, #11998e, #38ef7d) !important; border: none; color: white !important; border-radius: 8px; }
+.btn-secondary { background: linear-gradient(135deg, #636e72, #b2bec3) !important; border: none; color: white !important; border-radius: 8px; }
+
+.btn-sm { padding: 4px 10px; font-size: 0.8rem; border-radius: 6px; transition: all 0.2s; }
+.btn-sm:hover { transform: translateY(-1px); }
+
+/* --- Badges --- */
+.badge-actif {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.78rem;
+}
+.badge-inactif {
+    background: linear-gradient(135deg, #636e72, #b2bec3);
+    color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.78rem;
+}
+.badge-paye {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.78rem;
+}
+.badge-impaye {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white; padding: 5px 12px; border-radius: 20px; font-size: 0.78rem;
+}
+
+/* --- Forms --- */
+.form-control {
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+    padding: 10px 14px;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+.form-control:focus {
+    border-color: #f5c518;
+    box-shadow: 0 0 0 3px rgba(245, 197, 24, 0.15);
+}
+.form-group label {
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: #333;
+    margin-bottom: 6px;
+}
+
+/* --- Search bar --- */
+.search-bar {
+    background: white;
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    margin-bottom: 20px;
+    border-left: 4px solid #f5c518;
+}
+
+/* --- Stat Cards (Dashboard) --- */
+.stat-card {
+    border-radius: 14px;
+    padding: 22px;
+    color: white;
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+.stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+.stat-card .stat-icon {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 3rem;
+    opacity: 0.15;
+}
+.stat-card .stat-value {
+    font-size: 2rem;
+    font-weight: 800;
+}
+.stat-card .stat-label {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.85;
+}
+
+/* --- Pagination --- */
+.pagination .page-link {
+    border-radius: 8px;
+    margin: 0 3px;
+    border: none;
+    color: #1a1a1a;
+    font-weight: 500;
+    transition: all 0.2s;
+}
+.pagination .page-item.active .page-link {
+    background: linear-gradient(135deg, #f5c518, #e74c3c);
+    color: #1a1a1a;
+    font-weight: 700;
+    box-shadow: 0 3px 10px rgba(245, 197, 24, 0.3);
+}
+.pagination .page-link:hover {
+    background: rgba(245, 197, 24, 0.15);
+    color: #e74c3c;
+}
+
+/* --- Flash alerts --- */
+.alert {
+    border-radius: 10px;
+    border: none;
+    font-weight: 500;
+}
+.alert-success {
+    background: linear-gradient(135deg, rgba(17,153,142,0.1), rgba(56,239,125,0.1));
+    color: #0d8073;
+    border-left: 4px solid #11998e;
+}
+.alert-danger {
+    background: linear-gradient(135deg, rgba(231,76,60,0.1), rgba(192,57,43,0.1));
+    color: #c0392b;
+    border-left: 4px solid #e74c3c;
+}
+.alert-warning {
+    background: linear-gradient(135deg, rgba(245,197,24,0.1), rgba(243,156,18,0.1));
+    color: #d4a010;
+    border-left: 4px solid #f5c518;
+}
+
+/* --- Profile Dropdown --- */
+.dropdown-menu {
+    border: none;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    border-radius: 12px;
+}
+.dropdown-item {
+    padding: 8px 20px;
+    font-size: 0.88rem;
+    transition: all 0.2s;
+}
+.dropdown-item:hover {
+    background: rgba(245, 197, 24, 0.1);
+    color: #1a1a1a;
+}
+
+/* --- Content wrapper --- */
+.content-wrapper {
+    min-height: 100vh;
+}
+
+/* --- Sidebar brand --- */
+.brand-link:hover {
+    text-decoration: none !important;
+}
+
+/* --- Scrollbar sidebar --- */
+.main-sidebar::-webkit-scrollbar { width: 4px; }
+.main-sidebar::-webkit-scrollbar-thumb { background: #f5c518; border-radius: 4px; }
+
+/* ============================================================
+   LOGIN / AUTHENTICATION PAGES — Premium Design
+   ============================================================ */
+
+/* --- Background & Container --- */
+.login-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 30%, #16213e 60%, #0f0f0f 100%);
+    position: relative;
+    overflow: hidden;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    padding: 20px;
+}
+
+/* Animated floating orbs */
+.login-container::before {
+    content: '';
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(245, 197, 24, 0.12) 0%, transparent 70%);
+    top: -150px;
+    right: -100px;
+    animation: floatOrb1 8s ease-in-out infinite alternate;
+}
+.login-container::after {
+    content: '';
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(231, 76, 60, 0.10) 0%, transparent 70%);
+    bottom: -150px;
+    left: -100px;
+    animation: floatOrb2 10s ease-in-out infinite alternate;
+}
+
+@keyframes floatOrb1 {
+    0%   { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(-40px, 30px) scale(1.1); }
+}
+@keyframes floatOrb2 {
+    0%   { transform: translate(0, 0) scale(1); }
+    100% { transform: translate(30px, -40px) scale(1.15); }
+}
+
+/* Extra decorative particles */
+.login-container .login-wrapper {
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    max-width: 480px;
+}
+
+/* --- Login Box (Glassmorphism Card) --- */
+.login-box {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border-radius: 24px;
+    padding: 48px 42px 40px;
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(245, 197, 24, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+    position: relative;
+    z-index: 10;
+    border-top: 4px solid #f5c518;
+    animation: loginSlideUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+    opacity: 0;
+    transform: translateY(30px);
+}
+
+/* Admin variant */
+.login-box.admin-variant {
+    border-top-color: #e74c3c;
+    box-shadow:
+        0 25px 60px rgba(0, 0, 0, 0.5),
+        0 0 0 1px rgba(231, 76, 60, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.6);
+}
+
+@keyframes loginSlideUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* --- Logo Section --- */
+.login-logo-section {
+    text-align: center;
+    margin-bottom: 32px;
+}
+.login-logo-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: contain;
+    margin-bottom: 16px;
+    filter: drop-shadow(0 6px 20px rgba(245, 197, 24, 0.3));
+    animation: logoFadeIn 0.8s ease 0.2s both;
+    background: white;
+    padding: 4px;
+    border: 3px solid #f5c518;
+}
+.login-box.admin-variant .login-logo-img {
+    border-color: #e74c3c;
+    filter: drop-shadow(0 6px 20px rgba(231, 76, 60, 0.3));
+}
+
+@keyframes logoFadeIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to   { opacity: 1; transform: scale(1); }
+}
+
+.login-logo-title {
+    font-weight: 800;
+    color: #1a1a1a;
+    font-size: 1.75rem;
+    letter-spacing: 3px;
+    margin: 0 0 4px;
+    text-transform: uppercase;
+}
+.login-logo-subtitle {
+    color: #888;
+    font-size: 0.85rem;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+.login-logo-subtitle.admin-sub {
+    color: #e74c3c;
+    font-weight: 600;
+}
+
+/* --- Divider --- */
+.login-divider {
+    height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(245, 197, 24, 0.3), transparent);
+    border: none;
+    margin: 0 0 28px;
+}
+.login-box.admin-variant .login-divider {
+    background: linear-gradient(90deg, transparent, rgba(231, 76, 60, 0.3), transparent);
+}
+
+/* --- Form Group --- */
+.login-form .login-field-group {
+    margin-bottom: 22px;
+    position: relative;
+}
+.login-form .login-field-label {
+    display: block;
+    font-weight: 600;
+    font-size: 0.8rem;
+    color: #555;
+    margin-bottom: 8px;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    transition: color 0.3s;
+}
+.login-form .login-field-label i {
+    margin-right: 6px;
+    color: #f5c518;
+    font-size: 0.85rem;
+}
+.login-box.admin-variant .login-form .login-field-label i {
+    color: #e74c3c;
+}
+
+/* --- Input Fields --- */
+.login-form .login-input {
+    width: 100%;
+    padding: 14px 18px;
+    border: 2px solid #e8e8e8;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    font-family: inherit;
+    color: #1a1a1a;
+    background: #fafafa;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    outline: none;
+}
+.login-form .login-input::placeholder {
+    color: #bbb;
+    font-size: 0.88rem;
+}
+.login-form .login-input:focus {
+    border-color: #f5c518;
+    background: #fff;
+    box-shadow: 0 0 0 4px rgba(245, 197, 24, 0.12), 0 2px 8px rgba(0,0,0,0.04);
+}
+.login-box.admin-variant .login-form .login-input:focus {
+    border-color: #e74c3c;
+    box-shadow: 0 0 0 4px rgba(231, 76, 60, 0.12), 0 2px 8px rgba(0,0,0,0.04);
+}
+
+/* Password field wrapper */
+.login-password-wrapper {
+    position: relative;
+}
+.login-password-wrapper .login-input {
+    padding-right: 48px;
+}
+.login-password-toggle {
+    position: absolute;
+    right: 14px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    color: #aaa;
+    cursor: pointer;
+    padding: 4px;
+    font-size: 1rem;
+    transition: color 0.2s;
+}
+.login-password-toggle:hover {
+    color: #f5c518;
+}
+
+/* --- Submit Button --- */
+.login-submit-btn {
+    width: 100%;
+    padding: 15px 24px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #f5c518 0%, #e8a700 100%);
+    color: #1a1a1a;
+    font-size: 1rem;
+    font-weight: 700;
+    font-family: inherit;
+    cursor: pointer;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 15px rgba(245, 197, 24, 0.35);
+    margin-top: 8px;
+    position: relative;
+    overflow: hidden;
+}
+.login-submit-btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
+    transition: left 0.5s;
+}
+.login-submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(245, 197, 24, 0.45);
+}
+.login-submit-btn:hover::before {
+    left: 100%;
+}
+.login-submit-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 10px rgba(245, 197, 24, 0.3);
+}
+.login-submit-btn i {
+    margin-right: 8px;
+}
+
+/* Admin button variant */
+.login-submit-btn.admin-btn {
+    background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(231, 76, 60, 0.35);
+}
+.login-submit-btn.admin-btn:hover {
+    box-shadow: 0 8px 25px rgba(231, 76, 60, 0.45);
+}
+.login-submit-btn.admin-btn:active {
+    box-shadow: 0 2px 10px rgba(231, 76, 60, 0.3);
+}
+
+/* --- Alert in login --- */
+.login-alert {
+    background: linear-gradient(135deg, rgba(231, 76, 60, 0.08), rgba(192, 57, 43, 0.06));
+    border: 1px solid rgba(231, 76, 60, 0.15);
+    border-left: 4px solid #e74c3c;
+    border-radius: 12px;
+    padding: 14px 18px;
+    margin-bottom: 24px;
+    animation: alertShake 0.4s ease;
+}
+.login-alert p {
+    margin: 0;
+    color: #c0392b;
+    font-size: 0.88rem;
+    font-weight: 500;
+}
+.login-alert p i {
+    margin-right: 6px;
+}
+
+@keyframes alertShake {
+    0%, 100% { transform: translateX(0); }
+    20% { transform: translateX(-6px); }
+    40% { transform: translateX(6px); }
+    60% { transform: translateX(-4px); }
+    80% { transform: translateX(4px); }
+}
+
+/* --- Footer Links --- */
+.login-footer {
+    text-align: center;
+    margin-top: 28px;
+    padding-top: 20px;
+    border-top: 1px solid #f0f0f0;
+}
+.login-footer-link {
+    color: #e74c3c;
+    font-weight: 600;
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+.login-footer-link:hover {
+    color: #c0392b;
+    text-decoration: none;
+    transform: translateX(-3px);
+}
+.login-footer-link.back-link {
+    color: #f5c518;
+}
+.login-footer-link.back-link:hover {
+    color: #d4a010;
+}
+
+.login-copyright {
+    text-align: center;
+    margin-top: 16px;
+    color: #bbb;
+    font-size: 0.78rem;
+    letter-spacing: 0.3px;
+}
+
+/* --- Water Drop Animation (background decoration) --- */
+.water-drops {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 1;
+    overflow: hidden;
+}
+.water-drops .drop {
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(245, 197, 24, 0.15);
+    animation: dropFall linear infinite;
+}
+.water-drops .drop:nth-child(1) { left: 10%; animation-duration: 8s; animation-delay: 0s; width: 4px; height: 4px; }
+.water-drops .drop:nth-child(2) { left: 25%; animation-duration: 12s; animation-delay: 2s; width: 6px; height: 6px; }
+.water-drops .drop:nth-child(3) { left: 45%; animation-duration: 10s; animation-delay: 4s; width: 3px; height: 3px; }
+.water-drops .drop:nth-child(4) { left: 65%; animation-duration: 9s; animation-delay: 1s; width: 5px; height: 5px; }
+.water-drops .drop:nth-child(5) { left: 80%; animation-duration: 11s; animation-delay: 3s; width: 4px; height: 4px; }
+.water-drops .drop:nth-child(6) { left: 92%; animation-duration: 7s; animation-delay: 5s; width: 3px; height: 3px; }
+.water-drops .drop:nth-child(7) { left: 35%; animation-duration: 13s; animation-delay: 6s; width: 5px; height: 5px; background: rgba(231, 76, 60, 0.1); }
+.water-drops .drop:nth-child(8) { left: 55%; animation-duration: 9s; animation-delay: 7s; width: 4px; height: 4px; background: rgba(231, 76, 60, 0.1); }
+
+@keyframes dropFall {
+    0%   { top: -10%; opacity: 0; }
+    10%  { opacity: 1; }
+    90%  { opacity: 1; }
+    100% { top: 110%; opacity: 0; }
+}
+
+/* --- Grid pattern overlay --- */
+.login-grid-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image:
+        linear-gradient(rgba(245, 197, 24, 0.02) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(245, 197, 24, 0.02) 1px, transparent 1px);
+    background-size: 60px 60px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+/* --- Responsive --- */
+@media (max-width: 520px) {
+    .login-box {
+        padding: 36px 24px 32px;
+        border-radius: 18px;
+    }
+    .login-logo-img {
+        width: 80px;
+        height: 80px;
+    }
+    .login-logo-title {
+        font-size: 1.4rem;
+    }
+}
+
+/* ============================================================
+   RAPPORTS / HISTORIQUE — Styles
+   ============================================================ */
+
+/* --- Rapport Tabs --- */
+.rapport-tabs {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+.rapport-tab {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 24px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #555;
+    background: white;
+    border: 2px solid #e8e8e8;
+    text-decoration: none;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+.rapport-tab:hover {
+    text-decoration: none;
+    color: #1a1a1a;
+    border-color: #f5c518;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(245,197,24,0.2);
+}
+.rapport-tab.active {
+    background: linear-gradient(135deg, #f5c518, #e74c3c);
+    color: #1a1a1a;
+    border-color: transparent;
+    box-shadow: 0 4px 20px rgba(245,197,24,0.4);
+    transform: translateY(-2px);
+}
+.rapport-tab.active i {
+    color: #1a1a1a;
+}
+.rapport-tab i {
+    font-size: 1rem;
+    color: #aaa;
+    transition: color 0.3s;
+}
+.rapport-tab:hover i {
+    color: #f5c518;
+}
+
+/* --- Rapport Actions Buttons --- */
+.rapport-actions {
+    margin-bottom: 20px;
+}
+.btn-rapport {
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 22px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 0.88rem;
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    text-decoration: none;
+}
+.btn-rapport:hover {
+    transform: translateY(-2px);
+    text-decoration: none;
+}
+.btn-rapport-print {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: #f5c518;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+}
+.btn-rapport-print:hover {
+    box-shadow: 0 6px 20px rgba(245,197,24,0.3);
+    color: #f5c518;
+}
+.btn-rapport-pdf {
+    background: linear-gradient(135deg, #e74c3c, #c0392b);
+    color: white;
+    box-shadow: 0 4px 15px rgba(231,76,60,0.25);
+}
+.btn-rapport-pdf:hover {
+    box-shadow: 0 6px 20px rgba(231,76,60,0.4);
+    color: white;
+}
+.btn-rapport-share {
+    background: linear-gradient(135deg, #11998e, #38ef7d);
+    color: white;
+    box-shadow: 0 4px 15px rgba(17,153,142,0.25);
+}
+.btn-rapport-share:hover, .btn-rapport-share:focus {
+    box-shadow: 0 6px 20px rgba(17,153,142,0.4);
+    color: white;
+}
+
+/* Share dropdown */
+.share-dropdown {
+    border: none;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.18) !important;
+    border-radius: 14px !important;
+    min-width: 240px;
+    padding: 8px 0 !important;
+    overflow: hidden;
+}
+.share-item {
+    display: flex !important;
+    align-items: center;
+    gap: 12px;
+    padding: 10px 20px !important;
+    font-weight: 500;
+    font-size: 0.88rem;
+    transition: all 0.2s !important;
+}
+.share-item:hover {
+    background: rgba(245,197,24,0.08) !important;
+    padding-left: 26px !important;
+}
+.share-item i {
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+/* --- Chart Bars (Revenue Mensuel) --- */
+.chart-bars {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    gap: 12px;
+    height: 260px;
+    padding: 20px 10px 0;
+}
+.chart-bar-group {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 80px;
+}
+.chart-bar-wrapper {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+.chart-bar {
+    width: 70%;
+    min-height: 8px;
+    background: linear-gradient(180deg, #f5c518, #e74c3c);
+    border-radius: 8px 8px 0 0;
+    transition: height 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+}
+.chart-bar:hover {
+    opacity: 0.85;
+    box-shadow: 0 -4px 15px rgba(245,197,24,0.3);
+}
+.chart-bar-value {
+    font-size: 0.65rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 4px;
+    text-align: center;
+    white-space: nowrap;
+}
+.chart-bar-label {
+    font-size: 0.78rem;
+    font-weight: 600;
+    color: #555;
+    margin-top: 8px;
+    text-transform: uppercase;
+}
+.chart-bar-count {
+    font-size: 0.68rem;
+    color: #999;
+}
+
+/* --- Indicator Cards --- */
+.indicator-card {
+    border: none;
+    border-radius: 14px;
+    transition: all 0.3s ease;
+}
+.indicator-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+}
+.indicator-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.2rem;
+    flex-shrink: 0;
+}
+.indicator-label {
+    font-size: 0.78rem;
+    color: #888;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+.indicator-value {
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1a1a1a;
+}
+
+/* --- Timeline (Historique) --- */
+.timeline-container {
+    position: relative;
+}
+.timeline-date-group {
+    margin-bottom: 24px;
+}
+.timeline-date-header {
+    background: linear-gradient(135deg, #1a1a1a, #2d2d2d);
+    color: #f5c518;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 0.9rem;
+    margin-bottom: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.1);
+    display: inline-flex;
+    align-items: center;
+}
+.timeline-item {
+    display: flex;
+    gap: 16px;
+    padding: 16px 20px;
+    background: white;
+    border-radius: 12px;
+    margin-bottom: 8px;
+    border-left: 4px solid #ddd;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: all 0.3s ease;
+    animation: fadeIn 0.3s ease;
+}
+.timeline-item:hover {
+    transform: translateX(4px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.timeline-icon {
+    width: 44px;
+    height: 44px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+}
+.timeline-content {
+    flex: 1;
+    min-width: 0;
+}
+.timeline-title {
+    font-weight: 700;
+    font-size: 0.92rem;
+    color: #1a1a1a;
+    margin: 0 0 2px;
+}
+.timeline-desc {
+    font-size: 0.85rem;
+    color: #555;
+    margin: 0 0 2px;
+}
+.timeline-detail {
+    font-size: 0.78rem;
+    color: #999;
+    margin: 0;
+}
+
+/* Badge relevé */
+.badge-releve {
+    background: linear-gradient(135deg, #4facfe, #00f2fe);
+    color: white;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+}
+
+/* ============================================================
+   PRINT STYLES
+   ============================================================ */
+.rapport-print-header,
+.rapport-print-footer {
+    display: none;
+}
+
+@media print {
+    /* Hide non-printable elements */
+    .no-print,
+    .rapport-actions,
+    .rapport-tabs,
+    .main-sidebar,
+    .main-header,
+    .main-footer,
+    .content-header .float-right,
+    .pagination,
+    .modal {
+        display: none !important;
+    }
+
+    /* Show print elements */
+    .rapport-print-header,
+    .rapport-print-footer {
+        display: block !important;
+    }
+
+    /* Layout */
+    .content-wrapper {
+        margin: 0 !important;
+        padding: 0 !important;
+        background: white !important;
+    }
+    .container-fluid {
+        padding: 0 15px !important;
+    }
+
+    /* Cards */
+    .card {
+        box-shadow: none !important;
+        border: 1px solid #ddd !important;
+        page-break-inside: avoid;
+    }
+
+    /* Stat cards */
+    .stat-card {
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Tables */
+    .table thead th {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    /* Timeline */
+    .timeline-item {
+        box-shadow: none !important;
+        border: 1px solid #eee !important;
+        page-break-inside: avoid;
+    }
+
+    /* Chart */
+    .chart-bar {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+    }
+
+    body {
+        font-size: 11pt;
+    }
+
+    @page {
+        margin: 15mm;
+        size: A4;
+    }
+}
